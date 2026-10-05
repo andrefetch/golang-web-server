@@ -19,3 +19,15 @@ func main() {
 		log.Fatal(err)
 	}
 }
+
+func helloHandler(writer http.ResponseWriter, request *http.Request) {
+	if request.URL.Path != "/hello" {
+		http.Error(writer, "404 not found", http.StatusNotFound)
+		return
+	}
+	if request.Method != "GET" {
+		http.Error(writer, "Method is not supported.", http.StatusNotFound)
+		return
+	}
+	fmt.Fprintf(writer, "hello!")
+}
