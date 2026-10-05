@@ -9,12 +9,12 @@ Install go @ [go.dev](https://go.dev/dl/)
 Clone This Project:
 
 ```sh
-git clone https://github.com/andrefetch/golang-web-server.git
+$ git clone https://github.com/andrefetch/golang-web-server.git
 ```
 
 Run inside parent directory:
 ```sh
-./golang-web-server
+$ ./golang-web-server
 ```
 
 Open where the port is listening, in this we are listening on port **8080** (localhost:8080)
